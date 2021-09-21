@@ -2,7 +2,7 @@ local plr = game.Players.LocalPlayer
 local Evt = game.ReplicatedStorage.ACS_Engine.Eventos
 
 local Settings = {
-   ["ExplosiveHit"] = true,
+   ["ExplosiveHit"] = false,
    ["ExPressure"] = math.huge,
    ["ExpRadius"] = math.huge,
    ["DestroyJointRadiusPercent"] = math.huge,
