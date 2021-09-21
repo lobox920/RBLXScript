@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Secours de france", "Sentinel")
 
 ----- Teleportation -----
-local Tab = Window:NewTab("Teleprter")
+local Tab = Window:NewTab("Teleprtation")
 
 local Section = Tab:NewSection("Option de teleportation")
 
@@ -41,15 +41,8 @@ Section:NewButton("Se tp a la zone VIP", "Se teleporter a la Zone VIP", function
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-653.971191, 5.05000257, -1498.21655, -0.9967767, -4.07623126e-08, 0.0802259967, -4.45098962e-08, 1, -4.49244872e-08, -0.0802259967, -4.83505325e-08, -0.9967767)
 end)
 
-local Tab = Window:NewTab("Joueur")
-local Section = Tab:NewSection("Joueur")
-
--- Desactive le truc de saut 
-
-Section:NewButton("Retirer le truc pour sauter", "Retirer le truc pour sauter", function()
-    print("haha Pour plus tard bg")
-end)
-
+local Tab = Window:NewTab("Autre")
+local Section = Tab:NewSection("Autre")
 
 Section:NewSlider("Speedhack", "Change la vitesse du joueur", 250, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
@@ -57,3 +50,13 @@ end)
 Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
+
+Section:NewButton("Faire crash le serveur", "Faire crash le servceur", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/SFscripthehe/main/Crashserveur.lua')))()
+end)
+
+------------------------- CREDITS -------------------------
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Fait par lobox920")
+local Section = Tab:NewSection("Ouver a toute negociation d'arret du GUI :)")
+local Section = Tab:NewSection("Discord de SF: https://discord.gg/UnZVumd23t")
