@@ -47,7 +47,7 @@ local Section = Tab:NewSection("Joueur")
 -- Desactive le truc de saut 
 
 Section:NewButton("Retirer le truc pour sauter", "Retirer le truc pour sauter", function()
-    print("haha")
+    print("haha Pour plus tard bg")
 end)
 
 
