@@ -53,7 +53,7 @@ Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, fu
 end)
 
 Section:NewButton("Crash le serveur / lag", "Crash le serveur / le faire lag", function()
-    loadstring(game:HttpGet(('https://github.com/lobox920/RBLXScript/blob/main/ACS_explode_all.lua')))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/ACS_explode_all.lua')))()
 end)
 
 ------------------------- CREDITS -------------------------
@@ -61,3 +61,4 @@ local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Fait par lobox920")
 local Section = Tab:NewSection("Ouver a toute negociation d'arret du GUI :)")
 local Section = Tab:NewSection("Discord de SF: https://discord.gg/UnZVumd23t")
+local Section = Tab:NewSection("Mon discord : https://discord.gg/g2rmfEtvaj")
