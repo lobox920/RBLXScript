@@ -42,6 +42,13 @@ Section:NewButton("Se tp a la zone VIP", "Se teleporter a la Zone VIP", function
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-653.971191, 5.05000257, -1498.21655, -0.9967767, -4.07623126e-08, 0.0802259967, -4.45098962e-08, 1, -4.49244872e-08, -0.0802259967, -4.83505325e-08, -0.9967767)
 end)
 
+
+Section:NewButton("Retirer le mur VIP", "Retirer le mur de la zone VIP", function()
+    game:GetService("Workspace")["VIP Door"]:Destroy()
+end)
+
+
+----------- Autre ---------------
 local Tab = Window:NewTab("Autre")
 local Section = Tab:NewSection("Autre")
 
@@ -51,10 +58,18 @@ end)
 Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
+Section:NewButton("Voler (E pour voler)", "Fly script (E) pour voler", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/FlyScript.lua')))()
+end)
 
-Section:NewButton("Crash le serveur / lag", "Crash le serveur / le faire lag", function()
+Section:NewButton("Fly Noclip", "Fly Noclip", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/RBLXScript/main/Flynocliptool"))()
+end)
+
+Section:NewButton("Exploser tt le monde / Crash le serveur", "Exploser toutt le monde / Crash le serveur", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/ACS_explode_all.lua')))()
 end)
+
 
 ------------------------- CREDITS -------------------------
 local Tab = Window:NewTab("Credits")
