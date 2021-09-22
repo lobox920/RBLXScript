@@ -1,6 +1,6 @@
 ------------------ Desoler au staff etc mais je m'ennuyer et une partie des script vien pas de moi 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Secours de france", "Sentinel")
+local Window = Library.CreateLib("Secours de france", "Serpent")
 
 ----- Teleportation -----
 local Tab = Window:NewTab("Teleprtation")
@@ -60,5 +60,5 @@ end)
 local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Fait par lobox920")
 local Section = Tab:NewSection("Ouver a toute negociation d'arret du GUI :)")
-local Section = Tab:NewSection("Discord de SF: https://discord.gg/UnZVumd23t")
 local Section = Tab:NewSection("Mon discord : https://discord.gg/g2rmfEtvaj")
+local Section = Tab:NewSection("Discord de SF: https://discord.gg/UnZVumd23t")
