@@ -50,7 +50,7 @@ end)
 
 ----------- Autre ---------------
 local Tab = Window:NewTab("Autre")
-local Section = Tab:NewSection("Autre")
+local Section = Tab:NewSection("Joueur")
 
 Section:NewSlider("Speedhack", "Change la vitesse du joueur", 250, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
@@ -58,6 +58,11 @@ end)
 Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
+
+
+local Section = Tab:NewSection("Giga bordel")
+
+
 Section:NewButton("Voler (E pour voler)", "Fly script (E) pour voler", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/FlyScript.lua')))()
 end)
