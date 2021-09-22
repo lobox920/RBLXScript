@@ -43,7 +43,7 @@ Section:NewButton("Se tp a la zone VIP", "Se teleporter a la Zone VIP", function
 end)
 
 
-Section:NewButton("Retirer le mur VIP", "Retirer le mur de la zone VIP", function()
+Section:NewButton("Retirer le mur VIP (local)", "Retirer le mur de la zone VIP SEULEMENT POUR TOI", function()
     game:GetService("Workspace")["VIP Door"]:Destroy()
 end)
 
@@ -60,7 +60,7 @@ Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, fu
 end)
 
 
-local Section = Tab:NewSection("Giga bordel")
+local Section = Tab:NewSection("Le reste :")
 
 
 Section:NewButton("Voler (E pour voler)", "Fly script (E) pour voler", function()
