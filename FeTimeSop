@@ -1,0 +1,24 @@
+setting = settings().Network
+local Effect = Instance.new("ColorCorrectionEffect")
+Effect.Parent = game.Lighting
+Effect.Saturation = -1
+Effect.Brightness = 0
+Effect.Contrast = 0
+
+
+Effect.Enabled = false
+function onKeyPress(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.RightControl then	
+		
+		Effect.Enabled = true
+		setting.IncomingReplicationLag = 1000
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed * 3
+		wait(5)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		Effect.Enabled = false
+	    setting.IncomingReplicationLag = 0
+		
+	end
+end
+
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
