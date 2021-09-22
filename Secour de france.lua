@@ -43,7 +43,7 @@ Section:NewButton("Se tp a la zone VIP", "Se teleporter a la Zone VIP", function
 end)
 
 
-Section:NewButton("Retirer le mur VIP (local)", "Retirer le mur de la zone VIP SEULEMENT POUR TOI", function()
+Section:NewButton("Retirer le mur VIP", "Retirer le mur de la zone VIP", function()
     game:GetService("Workspace")["VIP Door"]:Destroy()
 end)
 
@@ -52,16 +52,19 @@ end)
 local Tab = Window:NewTab("Autre")
 local Section = Tab:NewSection("Joueur")
 
-Section:NewSlider("Speedhack", "Change la vitesse du joueur", 250, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
+Section:NewSlider("Speedhack", "Change la vitesse du joueur", 300, 16, function(v)   
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 end)
-Section:NewSlider("Jump power", "Change la force de saut du joueur", 500, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
+Section:NewSlider("Jump power", "Change la force de saut du joueur", 550, 50, function(v)  
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
 
-local Section = Tab:NewSection("Le reste :")
+local Section = Tab:NewSection("Giga bordel")
 
+Section:NewButton("Click Tp", "Give un outils de Click Tp", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/RBLXScript/main/TPTools.lua"))()
+end)
 
 Section:NewButton("Voler (E pour voler)", "Fly script (E) pour voler", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/FlyScript.lua')))()
@@ -75,8 +78,8 @@ Section:NewButton("Exploser tt le monde / Crash le serveur", "Exploser toutt le 
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/lobox920/RBLXScript/main/ACS_explode_all.lua')))()
 end)
 
-
 ------------------------- CREDITS -------------------------
+
 local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Fait par lobox920")
 local Section = Tab:NewSection("Ouver a toute negociation d'arret du GUI :)")
