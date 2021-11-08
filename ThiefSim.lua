@@ -17,7 +17,7 @@ game.StarterGui:SetCore("SendNotification",  {
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Magma Script                                                        Thef Simulator", "Ocean")
+local Window = Library.CreateLib("Magma Script                                                      Thef Simulator", "Ocean")
 
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Player Option")
